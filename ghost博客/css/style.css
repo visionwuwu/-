@@ -1,0 +1,74 @@
+/* layout css */
+
+
+/* base css */
+
+.placeholder {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* header css */
+
+.header .banner {
+    height: 190px;
+}
+
+.header .mainnav {
+    min-height: 56px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.footer {
+    padding-top: 35px;
+    background-color: #202020;
+    color: #999;
+}
+
+.footer .flinks {
+    min-height: 215px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+}
+
+.footer .copyright {
+    height: 80px;
+    border-top: 1px solid #303030;
+    background-color: #111111;
+}
+
+.main {
+    padding-top: 35px;
+    background-color: #ebebeb;
+}
+
+.article {
+    min-height: 400px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.statement,
+.download,
+.tagcloud {
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.statement {
+    min-height: 130px;
+}
+
+.download {
+    min-height: 130px;
+}
+
+.tagcloud {
+    min-height: 300px;
+}

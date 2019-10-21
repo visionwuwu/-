@@ -1,0 +1,386 @@
+/* header css start */
+
+a {
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+ul,
+dl,
+ol {
+    list-style: none;
+}
+
+
+/* commons css start */
+
+.hover {
+    background: #e67e22;
+    color: #fff;
+}
+
+.tit_head {
+    padding-bottom: 21px;
+}
+
+.tit_head h4 {
+    position: relative;
+    padding-bottom: 6px;
+    font-weight: 400;
+}
+
+.tit_head h4::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #e67e22 90px, #ebebeb 90px, #ebebeb);
+}
+
+body *::selection {
+    background: #e67e22;
+    color: #fff;
+}
+
+
+/* commons css end */
+
+.header .banner {
+    background: url(../images/banner.jpg) no-repeat 50% 20%/cover;
+}
+
+.header .banner h1 {
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    vertical-align: top;
+}
+
+.header .banner h1 .logo {
+    vertical-align: top;
+    display: inline-block;
+    width: 60px;
+    height: 68px;
+    margin-right: 10px;
+    background: url(../images/logo.png) no-repeat center;
+}
+
+
+/* 导航区 */
+
+.mainnav .icon_menu {
+    text-align: center;
+}
+
+.mainnav .icon_menu i {
+    color: #505050;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 55px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.mainnav .nav_menu {
+    text-align: center;
+    background: #fff;
+}
+
+.mainnav .nav_menu a {
+    padding: 0 20px;
+    display: inline-block;
+    color: #505050;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    line-height: 56px;
+    height: 56px;
+    text-align: left;
+}
+
+.mainnav .nav_menu a:hover {
+    color: #e67e22;
+}
+
+.mainnav .nav_menu a.active {
+    color: #e67e22;
+}
+
+.mainnav .nav_menu a.active::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #e67e22;
+    left: 0;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainnav .nav_menu {
+        padding-left: 30px;
+    }
+    .mainnav .nav_menu {
+        display: none;
+    }
+    .mainnav .nav_menu a {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mainnav .nav_menu {
+        display: block !important;
+    }
+}
+
+
+/* 文章 */
+
+.main .article {
+    padding: 0 35px;
+}
+
+.main .article .art_header {
+    text-align: center;
+}
+
+.main .article .art_header h3 {
+    color: #303030;
+    font-size: 35px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-weight: normal;
+}
+
+.main .article .art_header p {
+    color: #959595;
+    font-size: 14px;
+}
+
+.main .article .art_header a {
+    color: #e67e22;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.main .article .art_body {
+    margin-top: 42px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.main .article .art_body .art_content {
+    color: #444443;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.main .article .art_body .readMore {
+    display: inline-block;
+    padding: 12px 15px;
+    background: #e67e22;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.main .article .art_body .readMore:hover {
+    background: #303030;
+}
+
+.main .article .art_footer {
+    height: 85px;
+    padding-top: 29px;
+    box-sizing: border-box;
+    border-top: 1px solid #ebebeb;
+}
+
+.main .article .art_footer i {
+    font-size: 20px;
+    color: #95959b;
+}
+
+.main .page {
+    margin-bottom: 35px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.main .page>em {
+    padding: 10px 14px;
+    background: #e67e22;
+    border-radius: 4px;
+}
+
+.main .page .group {
+    font-style: normal;
+}
+
+.main .next {
+    background: #e67e22;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    margin-left: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* left css end */
+
+
+/* right css start */
+
+.right_aside .box {
+    box-sizing: border-box;
+    padding: 22px 30px 21px 30px;
+}
+
+.right_aside .box .header h4 {
+    font-size: 20px;
+    color: #303030;
+}
+
+.right_aside .box .body {
+    font-size: 14px;
+    color: #505050;
+}
+
+.right_aside .box.download .body .down_button {
+    display: block;
+    padding: 10px 0;
+    background: #e67e22;
+    transition: background .2s ease;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.right_aside .box.download .body .down_button:hover {
+    background: #303030;
+}
+
+.tagcloud ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagcloud ul li {
+    padding: 6px 7px 7px;
+    border: 1px solid #ebebeb;
+    color: #959595;
+    margin-right: 11px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    transition: all .2s ease;
+}
+
+.tagcloud ul li:last-child {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tagcloud ul li:hover {
+    background: #e67e22;
+    color: #fff;
+}
+
+
+/* footer css start */
+
+.footer .flinks a {
+    color: #959595;
+    font-size: 14px;
+    padding: 2px 7px;
+    transition: all .2s ease;
+}
+
+.footer .flinks a:hover {
+    background: #e67e22;
+    color: #fff;
+}
+
+.footer .flinks .tit_head h4 {
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.footer .flinks .tit_head h4::after {
+    background: linear-gradient(90deg, #e67e22 90px, #303030 90px, #303030);
+}
+
+.footer .flinks .link {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .col-sm-4:nth-child(1) .flinks .link a {
+    margin-right: 13px;
+    margin-bottom: 7px;
+}
+
+.footer .col-sm-4:nth-child(2) .flinks .link a {
+    border: 1px solid #303030;
+    margin-right: 11px;
+    margin-bottom: 7px;
+}
+
+.footer .col-sm-4:nth-child(3) .flinks .link a {
+    margin-right: 11px;
+}
+
+
+/* copy 区域 */
+
+.copyright {
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.copyright p a:hover {
+    text-decoration: underline;
+}
+
+.return_top {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 10px;
+    background: #90521a;
+    right: 10px;
+    transition: all .2s ease;
+}
+
+.return_top:hover {
+    background: #e67e22;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .flinks {
+        min-height: auto;
+    }
+}

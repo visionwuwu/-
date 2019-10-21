@@ -1,0 +1,26 @@
+
+$(function(){
+	$(".right-slider").hover(function(){
+		$(this).next().toggle();
+	})
+	$("#slider5").click(function(){
+		$("body").animate({scrollTop:0},500);
+	})
+	$("#slider5").hide();
+	$(window).scroll(function(){
+		if($(window).scrollTop()>100){
+			$("#slider5").fadeIn();
+		}else{
+			$("#slider5").fadeOut();
+		}
+	})
+	$("#close").click(function(){
+		if($("#mid").css('display')=='block'){
+			$("#mid").hide();
+			$(this).removeClass('fa-window-minimize').addClass('fa-window-maximize');
+		}else{
+			$("#mid").show();
+			$(this).removeClass('fa-window-maximize').addClass('fa-window-minimize');
+		}
+	});
+})
